@@ -4,7 +4,7 @@ name: CI and Testing
 #Trigger to run workflow
 on:
   push:
-    branches: [master, main, **]
+    branches: master
   pull_request:
     branches: master
 
@@ -24,7 +24,7 @@ job:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22" 
+          node-version: "22"
 
       #step-3: Install the repo's dependencies from package.json
       - name: Install dependencies
