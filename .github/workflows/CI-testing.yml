@@ -9,7 +9,7 @@ on:
     branches: master
 
 #job to run
-job:
+jobs:
   #Name of the job
   builds:
     #the type of runner machine
